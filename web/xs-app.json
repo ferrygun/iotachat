@@ -1,0 +1,20 @@
+{
+	"welcomeFile": "index.html",
+	"authenticationMethod": "route",
+	"routes": [{
+		"source": "/node(.*)",
+		"destination": "mam_core_api",
+		"csrfProtection": true,
+		"authenticationType": "none"
+	},{
+		"source": "/route(.*)",
+		"destination": "mam_core_api",
+		"csrfProtection": true,
+		"authenticationType": "none"
+	},{
+		"source": "/socket.io(.*)",
+		"destination": "mam_core_api",
+		"csrfProtection": true,
+		"authenticationType": "none"
+	}]
+}
